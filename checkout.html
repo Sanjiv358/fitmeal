@@ -15,6 +15,48 @@
             font-size: 30px;
             color: white;
         }
+        form{
+            margin-top: 40px;
+            margin-left: 150px;
+            width: 400px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: aquamarine;
+        }
+        label{
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            margin-top: 40px;
+        }
+        input{
+            width: 80%;
+            height: 40px;
+            margin-top: 5px;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        h3{
+            margin-left: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            margin-left: 250px;
+            margin-top: 50px;
+            width: 250px;
+            height: 50px;
+            font-size: 20px;
+            background-color: red;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: green;
+            color: white;
+        }
+        #xyz{
+            display: flex;
+        }
 
     </style>
 </head>
@@ -22,44 +64,80 @@
     <div id="checkout">
         <h1>Checkout</h1>
     </div>
-    <form action="">
-        <h1>Billing Details</h1>
-        <label for="">Name*</label>
-        <br>
-        <input placeholder="" type="text">
-        <br>
-        <label for="">Country</label>
-        <br>
-        <h3>India</h3>
-        <br>
-        <label for="">Street Address*</label>
-        <br>
-        <input type="text">
-        <br>
-        <input type="text">
-        <br>
-        <label for="">Town/City*</label>
-        <br>
-        <input type="text">
-        <br>
-        <label for="">State*</label>
-        <br>
-        <input type="text">
-        <br>
-        <label for="">Pin*</label>
-        <br>
-        <input type="number">
-        <br>
-        <label for="">Phone*</label>
-        <br>
-        <input type="number">
-        <br>
-        <label for="">Email*</label>
-        <br>
-        <input type="email">
+    <div id="xyz">
+        <form action="">
+            <h1>Billing Details</h1>
+            <label for="">Name*</label>
+            <br>
+            <input placeholder="" type="text">
+            <br>
+            <label for="">Country</label>
+            <br>
+            <h3>India</h3>
+            <br>
+            <label for="">Street Address*</label>
+            <br>
+            <input type="text">
+            <br>
+            <input type="text">
+            <br>
+            <label for="">Town/City*</label>
+            <br>
+            <input type="text">
+            <br>
+            <label for="">State*</label>
+            <br>
+            <input type="text">
+            <br>
+            <label for="">Pin*</label>
+            <br>
+            <input type="number">
+            <br>
+            <label for="">Phone*</label>
+            <br>
+            <input type="number">
+            <br>
+            <label for="">Email*</label>
+            <br>
+            <input type="email">
+        </form>
+        <div>
+            <form action="">
+                <label for="">Card holder name </label>
+                <br>
+                <input type="text">
+                <br>
+                <label for="">Card number</label>
+                <br>
+                <input type="number">
+                <br>
+                <label for="">CVV</label>
+                <br>
+                <input type="number">
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
         
-
-    </form>
+        <button>Place Your Order</button>
+    
     
 </body>
 </html>
+<script>
+    document.querySelector("button").addEventListener("click", myfunction)
+
+    function myfunction(){
+        event.preventDefault();
+        alert("Your address is saved successfully and make payment")
+    }
+
+    document.querySelector("form").addEventListener("submit", paymentfun)
+
+    function paymentfun(){
+        event.preventDefault();
+        console.log("inside");
+        alert("Thanks for order and your order is placed")
+    }
+</script>

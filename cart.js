@@ -23,12 +23,12 @@ function displayProduct(data){
         cartPrice+=Number(e.Price)
     })
 }
-console.log(cartPrice)
-let total = document.querySelector("#total");
-total.innerText=`Total Price payble: ${cartPrice}`
-function removeItem(e,i){
-    product.splice(i,1);
-    localStorage.setItem("addToBag", JSON.stringify(product));
-    window.location.reload();
-    displayProduct(product)
-}
+    console.log(cartPrice)
+    let total = document.querySelector("#total");
+    total.innerText=`Total Price payble: ${cartPrice}`
+    function removeItem(e,i){
+        product.splice(i,1);
+        localStorage.setItem("addToBag", JSON.stringify(product));
+        window.location.reload();
+        displayProduct(product)
+    }
