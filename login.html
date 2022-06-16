@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        #login{
+            width: 100%;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.751);
+            color: white;
+            text-align: center;
+            padding-top: 120px;
+            font-size: 25px;
+        }
+        form{
+            width: 30%;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: bisque;
+        }
+        label{
+            margin-bottom: 20px;
+            margin-left: 20px;
+            font-size: 30px;
+        }
+        input{
+            width: 80%;
+            height: 35px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <h1>My Account</h1>
+    </div>
+    <h1>Login</h1>
+    <form action="">
+        <label for="">User Id</label>
+        <br>
+        <input type="text">
+        <br>
+        <label for="">Password</label>
+        <br>
+        <input type="password">
+        <br>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",loginFun)
+
+    function loginFun(){
+        event.preventDefault();
+        alert("Your Userid and Password is matched");
+    }
+</script>
