@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        /* navbar */
+        #navbar{
+            display: flex;
+            height: 80px;
+            width: 100%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #navbar>div{
+            margin: auto;
+        }
+        #navbar>div:nth-child(1){
+            width: 100px;
+            height: 60px;
+            margin-left: 50px;
+        }
+        div>img{
+            width: 100%;
+            height: 100%;     
+        }
+        div>img:hover{
+            cursor: pointer;
+        }
+        #navbar>div:nth-child(2){
+            display: flex;
+            gap: 25px;
+        }
+        div>h3:hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        #navbar>div:nth-child(3){
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            width: 200px;
+            text-align: center;
+            height: 60px;
+        }
+        #navbar>div:nth-child(3):hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        select{
+            font-size: 18px;
+            border: none;
+            font-weight: 550;
+        }
+        select:hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        /* navbar */
+        #products{
+            width: 100%;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.831);
+        }
+        #products>h1{
+            text-align: center;
+            padding-top: 150px;
+            color: white;
+            font-size: 60px;
+        }
+        #menubar{
+            display: flex;
+        }
+        #productcategory{
+            margin-left: 40px;
+        }
+        #productcategory>h3:hover{
+            color: red;
+            cursor: pointer;
+            border: none;
+        }
+        #cart>button{
+            height: 40px;
+            width: 300px;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+        #cart>button>a{
+            text-decoration: none;
+        }
+        #cart>button:hover{
+            background-color: red;
+            cursor: pointer;
+            border: none;
+        }
+        br+button{
+            margin-top: 20px;
+            border: none;
+        }
+        #productdetail{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,auto);
+            margin-left: 20px;
+        }
+        #productdetail>div{
+            margin-top: 20px;
+            width: 90%;
+            height: 450px;
+            border-radius: 20px;
+            gap: 10px;
+            text-align: center;
+        }
+        #productdetail>div>img{
+            width: 100%;
+            height: 50%;
+            border-radius: 20px;
+        }
+        #productdetail>div>button{
+            width: 150px;
+            height: 30px;
+            font-size: 20px;
+            background-color: red;
+            border: none;
+        }
+        /* footer */
+        #footer{
+            display: flex;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.749);
+        }
+        #footer>div{
+            width: 22%;
+            height: 400px;
+            gap: 20px;
+            margin: auto;
+            padding: 10px;
+        }
+        #footer>div>img{
+            padding-left: 30px;
+        }
+        #footer>div>p{
+            color: white;
+            padding-top: 40px;
+            padding-left: 10px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        #footer>div>h1{
+            color: rgb(68, 208, 68);
+            padding: 0px 20px;
+        }
+        #footer>div>h5{
+            color: rgba(19, 186, 224, 0.908);
+            font-size: 20px;
+            padding: 0px 20px;
+        }
+        #footer>div>h5:hover{
+            cursor: pointer;
+            background-color: rgb(25, 174, 223);
+            color: white;
+        }
+        .contact>p{
+            margin-top: -55px;
+            margin-left: 10px;
+        }
+        #copyright{
+            height: 40px;
+            background-color: rgb(0, 0, 0);  
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt="">
+        </div>
+        <div>
+            <h3>Home</h3>
+            <h3>Meal Plans</h3>
+            <h3>Health Coaching</h3>
+            <h3>Products</h3>
+            <h3>Blog</h3>
+            <h3>About Us</h3>
+            <h3>Cart</h3>
+        </div>
+        <div>
+            <h2>Call:9100347480</h2>
+        </div>
+    </div>
+    <!-- navbar -->
+    <div id="products">
+        <h1>Products</h1>
+    </div>
+    <div id="menubar">
+        <div id="productcategory">
+            <h1 style="color: rgb(27, 211, 27);">Product Categories</h1>
+            <hr>
+            <h3>Diet Plans</h3>
+            <h3>Meal Plans</h3>
+            <h3>Products</h3>
+            <h3>Dishes</h3>
+            <h3>Fresh Bakes</h3>
+            <h3>Low Calories Sauces</h3>
+            <h3>Nut Butters</h3>
+            <h3>Vegan Sweets</h3>
+            <hr>
+            <div id="cart">
+                <h1>Cart</h1>
+                <hr>
+                <h2>Subtotal:</h2>
+                <button><a href="cart.html">View Cart</a></button>
+                <br>
+                <button>Checkout</button>
+            </div>
+        </div>
+        <div id="productdetail"></div>
+    </div>
+    <div id="footer">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png" alt="">
+            <p>The Fitmeals culinary team consists of very passionate and skilled chefs. Our team is well versed in nutrition and all our menus and plans are designed by qualified nutrition experts.</p>
+        </div>
+        <div>
+            <h1>Explore</h1>
+            <h5>Home</h5>
+            <h5>Meal plans</h5>
+        </div>
+        <div>
+            <h1>Links</h1>
+            <h5>About Us</h5>
+            <h5>Blogs</h5>
+            <h5>FAQ</h5>
+            <h5>Testimonials</h5>
+        </div>
+        <div class="contact">
+            <h1>Contacts</h1>
+            <h5>Call us:</h5>
+            <p>9100347480</p>
+            <p>9963697412</p>
+            <h5>Email us:</h5>
+            <p>fitmealsindia@gmail.com</p>
+            <h5>Our Location</h5>
+            <p>Banjara Hills, Road N0-5, Hyderabad</p>
+        </div>
+    </div>
+    <div id="copyright">
+        <p>Copyright © 2021. FitMeals. All Rights Reserved.</p>
+    </div>
+    
+    
+</body>
+</html>
+
+<script src="product.js">
+   
+</script>

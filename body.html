@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body</title>
+    <style>
+        /* navbar */
+        #navbar{
+            display: flex;
+            height: 80px;
+            width: 100%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #navbar>div{
+            margin: auto;
+        }
+        #navbar>div:nth-child(1){
+            width: 100px;
+            height: 60px;
+            margin-left: 50px;
+        }
+        div>img{
+            width: 100%;
+            height: 100%;     
+        }
+        div>img:hover{
+            cursor: pointer;
+        }
+        #navbar>div:nth-child(2){
+            display: flex;
+            gap: 25px;
+        }
+        div>h3:hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        #navbar>div:nth-child(3){
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            width: 200px;
+            text-align: center;
+            height: 60px;
+        }
+        #navbar>div:nth-child(3):hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        #navbar{
+            display: flex;
+            height: 80px;
+            width: 100%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #navbar>div{
+            margin: auto;
+        }
+        #navbar>div:nth-child(1){
+            width: 100px;
+            height: 60px;
+            margin-left: 50px;
+        }
+        div>img{
+            width: 100%;
+            height: 100%;     
+        }
+        div>img:hover{
+            cursor: pointer;
+        }
+        #navbar>div:nth-child(2){
+            display: flex;
+            gap: 25px;
+        }
+        div>h3:hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        #navbar>div:nth-child(3){
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            width: 200px;
+            text-align: center;
+            height: 60px;
+        }
+        #navbar>div:nth-child(3):hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        select{
+            font-size: 18px;
+            border: none;
+            font-weight: 550;
+        }
+        select:hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        /* navbar end */
+
+
+        #slideImage{
+            background-image: url(https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_01.jpg);
+            height: 700px;
+            width: 100%;
+        }
+        #slideImage>div{
+            margin: auto;
+            text-align: center;
+            font-size: 50px;
+            padding-top: 100px;
+        }
+        button{
+            height: 50px;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 20px;
+            background-color: green;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(197, 15, 15);
+            color: white;
+            border: none;
+        }
+        .plans{
+            background-color: rgb(57, 146, 57);
+        }
+        #main{
+            display: flex;
+            height: 500px;
+            width: 100%;
+        }
+        #main>div:nth-child(1){
+            width: 45%;
+            height: 100%;
+            margin: auto;
+        }
+        #main>div>h1{
+            font-size: 50px;
+        }
+        h1+h1{
+            margin-top: -20px;
+            color: rgb(51, 182, 51);
+        }
+        h1+p{
+            font-size: 20px;
+            line-height: 20px;
+        }
+        p+button{
+            margin-top: 30px;
+            background-color: coral;
+            border: none;
+        }
+        #main>div:nth-child(2){
+            width: 25%;
+            height: 100%;
+            margin: auto;
+            
+        }
+        #main>div>img{
+            height: 70%;
+            width: 100%;
+            margin-top: 30px;
+        }
+        #main>div:nth-child(3){
+            width: 25%;
+            height: 100%;
+            margin: auto;
+        }
+        .speciality>p{
+            font-size: 25px;
+            margin-left: 20px;
+            font-weight: 500;
+            margin-top: 40px;
+        }
+        #page3{
+            height: 600px;
+            width: 100%;
+            background-color: rgb(192, 206, 206);
+        }
+        #page3>div:nth-child(1){
+            padding-top: 70px;
+            text-align: center;
+            height: 200px;
+            width: 80%;
+            margin: auto;
+        }
+        .benefits{
+            color: rgb(57, 213, 57);
+            font-size: 30px;
+        }
+        #service{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        #service>div{
+            border: 1px solid red;
+            height: 250px;
+            width: 20%;
+            margin: auto;
+        }
+        #page4{
+            height: 700px;
+            width: 100%;
+            background-color: green;
+            margin-top: -30px;
+        }
+        .page4a{
+            height: 650px;
+            width: 80%;
+            background-color: white;
+            margin: auto;
+            border-radius: 30px;
+        }
+        .page4a>div>p{
+            text-align: center;
+            font-size: 30px;
+            color: rgb(61, 172, 61);
+        }
+        .page4a>div>p+h1{
+            text-align: center;
+            margin-top: -20px;
+        }
+        #category{
+            margin-top: 60px;
+            display: flex;
+            gap: 20px;
+        }
+        #category>h2:hover{
+            cursor: pointer;
+            background-color: rgb(73, 181, 73);
+            color: white;
+        }
+        #category>h2{
+            margin: auto;
+        }
+        #para{
+            padding-top: 20px;
+        }
+        #mealPlan{
+            display: flex;
+            margin-top: 60px;
+            gap: 40px;
+        }
+        #mealPlan>div>img{
+            margin-left: 20px;
+        }
+        div>h1+h4{
+            color: green;
+        }
+        div>h1+h4+p{
+            font-size: 20px;
+        }
+        #page5{
+            height: 800px;
+            width: 100%;
+        }
+        #page5>div:nth-child(1){
+            height: 400px;
+            background-image: url(https://www.fitmeals.co.in/wp-content/uploads/2019/10/plate_rounded.jpg);
+            text-align: center;
+        }#page5>div>h1{
+            margin-top: 30px;
+            font-size: 50px;
+        }
+        #page5>div:nth-child(2){
+            height: 400px;
+            display: flex;
+        }
+        #page5a>div{
+            width: 50%;
+        }
+        #page5a>div:nth-child(1){
+            margin-top: 25px;
+            margin-left: 50px;
+        }
+        #page5a>div>img{
+            margin-left: 200px;
+        }
+        #page6{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(5,auto);
+            gap: 20px;
+        }
+        #page6>div{
+            width: 100%;
+            gap: 20px;
+        }
+        #page6>div>img{
+            width: 100%;
+            height: 500px;
+        }
+        #page7{
+            background-color: rgb(101, 59, 59);
+            margin-top: -25px;
+            color: white;
+        }
+        #page7a>h2{
+            text-align: center;
+            padding: 20px;
+        }
+        #page7a>h2+h1{
+            text-align: center;
+            font-size: 60px;
+        }
+        #page7a>p{
+            text-align: center;
+        }
+        #page7a>img{
+            margin-left: 600px;
+            height: 150px;
+            width: 150px;
+        }
+        #page7a>h3{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 0px;
+        }
+        #page8{
+            padding: 20px;
+            margin-top: -30px;
+            background-color: skyblue;
+        }
+        #page8>h1{
+            text-align: center;
+        }
+        #page8>p{
+            text-align: center;
+        }
+        #page8>input{
+            margin-left: 320px;
+            height: 40px;
+            width: 300px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 25px;
+            border: none;
+        }
+        #page8b{
+            text-align: center;
+            font-size: 30px;
+        }
+        #page9{
+            display: flex;
+        }
+        .page9a{
+            height: 550px;
+            width: 30%;
+            gap: 20px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .page9a>img{
+            width: 100%;
+            height: 50%;
+        }
+        img+button{
+            margin-top: -10px;
+            margin-left: 100px;
+            border: none;
+        }
+        /* footer */
+        #footer{
+            display: flex;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.749);
+            margin-top: 50px;
+        }
+        #footer>div{
+            width: 22%;
+            height: 400px;
+            gap: 20px;
+            margin: auto;
+            padding: 10px;
+        }
+        #footer>div>img{
+            padding-left: 30px;
+        }
+        #footer>div>p{
+            color: white;
+            padding-top: 40px;
+            padding-left: 10px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        #footer>div>h1{
+            color: rgb(68, 208, 68);
+            padding: 0px 20px;
+        }
+        #footer>div>h5{
+            color: rgba(19, 186, 224, 0.908);
+            font-size: 20px;
+            padding: 0px 20px;
+        }
+        #footer>div>h5:hover{
+            cursor: pointer;
+            background-color: rgb(25, 174, 223);
+            color: white;
+        }
+        .contact>p{
+            margin-top: -55px;
+            margin-left: 10px;
+        }
+        #copyright{
+            height: 40px;
+            background-color: rgb(0, 0, 0);  
+            color: white;
+            padding: 20px;
+        }
+        #navbar>div>h3>a{
+            text-decoration: none
+        }
+        #bag{
+            display: flex;
+        }
+        #bag>h3{
+            margin-right: 0px;
+        }
+        #footer{
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar html -->
+    <div id="navbar">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt="">
+        </div>
+        <div>
+            <h3>Home</h3>
+            <h3>Meal Plans</h3>
+            <h3>Health Coaching</h3>
+            <h3><a href="products.html">Products</a></h3>
+            <h3>Blog</h3>
+            <h3>About Us</h3>
+            <h3><a href="cart.html">Cart</a></h3>
+        </div>
+        <div>
+            <h2>Call:9100347480</h2>
+        </div>
+    </div>
+    <!-- navbar html end -->
+    <div id="slideImage">
+        <div>
+            <h1>Who Says Eating Healthy is Boring?</h1>
+            <button class="plans">View Plans</button>
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div id="main">
+        <div>
+            <h1>It's is not just food,</h1>
+            <h1>It's a lifestyle!</h1>
+            <p>We break the stereotype ‘healthy eating is boring”. Reach your weight, health and workout goals with deliciously healthy food. We have various diet plans customised to suit your specific health and weight requirements. With a new changing menu every week, we bring to you food from various cuisines, with a healthy twist. We make healthy eating fun and effortless!</p>
+            <button>Read More</button>
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/health-bottle-cut.jpg" alt="">
+        </div>
+        <div class="speciality">
+            <p>Custom tailored diet plans</p>
+            <p>Free from refined sugars and trans fats</p>
+            <p>Different menu every day</p>
+            <p>Flexibility of plans</p>
+            <p>Ongoing nuitriest supports</p>
+        </div>
+    </div>
+    <!-- <div id="page3">
+        <div>
+            <p class="benefits">Our Benefits</p>
+            <h1>So Why Choose Fitmeals?</h1>
+            <p>Fitmeals is not a diet system that promotes cleanses, pills, preserved foods or any kind of disordered eating habits. We’re all about wholesome & nourishing foods that make you feel the best version of yourself. </p>
+        </div>
+        <div id="service">
+            <div>
+                <img src="" alt="">
+                <h3>Fresh ingriedents</h3>
+                <p>Procuring fresh and fundamental ingredients required for a wholesome meal.</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Finest quality</h3>
+                <p>All the meals are designed by our nutrition experts using only the best quality ingredients.</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>On time delivery</h3>
+                <p>Helping you stay ahead of your diet plans.</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Presertive-free</h3>
+                <p>Your ultimate plan for eating clean without added preservatives.</p>
+            </div>
+        </div>
+    </div> -->
+    <div id="page4">
+        <div class="page4a">
+            <div id="para">
+                <p>Hungery yet?</p>
+                <h1>Choose your meal plans</h1>
+            </div>
+            <div id="category">
+                <h2>Weight Loss Meal Plan</h2>
+                <h2>Athletic Meal Plan</h2>
+                <h2>Maintenance Meal Plan</h2>
+                <h2>Keto Meal Plan</h2>
+            </div>
+            <div id="mealPlan">
+                <div>
+                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/weight.jpg" alt="">
+                </div>
+                <div>
+                    <h1>Weight Loss Meal Plan</h1>
+                    <h4>1200-1400 Kcal</h4>
+                    <p>If your aim is to lose weight in a gradual, healthy manner then this diet would meet your requirements. The meals are well balanced and consist of complex carbohydrates, lean protein, healthy fats and generous portions of fruits and vegetables which add all the essential vitamins, minerals and fibre to your diet.</p>
+                    <button>View Plan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page5">
+        <div>
+            <h1>Not convinced yet?</h1>
+            <h1>Get our 1 week trial plan</h1>
+            <button><a href="products.html">Order Now</a></button>
+        </div>
+        <div id="page5a">
+            <div>
+                <h1>Diet Plans</h1>
+                <h1>The Ultimate DIY Meal Guide</h1>
+                <p>Say goodbye to crash diets and give us the opportunity to create highly tailored plans that suit your body type and food preferences distinctively. Just give us your details and goals and we’ll do all the meal planning for you!</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/02/dish_07-1-360x360-1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Client Diaries</h1>
+    <div id="page6">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/69100BD5-C846-4EF7-8FA1-724A12C0A371-576x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/1A9918ED-6807-4364-A47A-A5C61958643A-2-787x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/0DA7EE29-B041-406E-BD69-90670FCA7526-576x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/E92321D7-99A8-4343-ABE9-595C732CD6E4-3.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/1A9918ED-6807-4364-A47A-A5C61958643A-2-787x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/A3AB3449-07BE-4A23-9B5F-8C6625EE2743-576x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/52383BDD-D644-454A-AC1D-50E2DF6B7AF6-2.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/D6423578-EB78-42DD-9028-246290940A73-576x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/F497D877-C665-4718-9D60-DC6884CF8F86-2-1.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/6350561F-C9DA-4249-820B-74B62FA3E6D7-2-744x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/BD768075-20B6-4D6A-90BB-050E6E2B9012-2-576x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/994FBF1F-9040-4E78-9F53-FBB220B51F33-576x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/C9D86D56-9249-44DF-A880-4B8AAE01E952-576x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/D0B087E5-B601-4A76-97C6-98E583B3DADA-576x1024.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/B1549FA0-9C3E-4AFD-A830-17E8399327BC-576x1024.jpg" alt="">
+        </div>
+    </div>
+    <div id="page7">
+        <div id="page7a">
+            <h2>Testimonials</h2>
+            <h1>What our clients say</h1>
+            <p>"The perfect combination of healthy and delicious food. Fitmeals made sure that I reach my fitness and weight goals with frequent follow up calls from the nutritionist who made sure to always check on the progress. Excellent service, really happy with the results ."</p>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2017/05/11-01.png" alt="">
+            <h3>Divya</h3>
+        </div>
+    </div>
+    <div id="page8">
+        <h1>Join our mailing list</h1>
+        <p>Subscribe to our newsletter to stay up to date with our discounts, new products, recipes & nutrition tips.</p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+    </div>
+    <div>
+        <div id="page8b">
+            <h3>Food Blogs</h3>
+            <h1>Recent articles</h1>
+        </div>
+        <div id="page9">
+            <div class="page9a">
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/unnamed-768x768.jpg" alt="">
+                <button>Uncategorised</button>
+                <h1>Fitmeals India Collaboration With Nestle a+ Grekyo</h1>
+                <p>We’re excited to announce our collaboration with Nestle a+. Now you can get a Nestle a+ Grekyo with every breakfast meal! Wh …</p>
+            </div>
+            <div class="page9a">
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/mangoes-1320111_640.jpg" alt="">
+                <button>Nutrition</button>
+                <h1>5 reasons why you eat mangoes- Myths busting Mondays</h1>
+                <p>The mango season is nearing an end right now and if for any reason you’ve avoided mangos like a plague then this article is just f …</p>
+            </div>
+            <div class="page9a">
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/man-461195_640.jpg" alt="">
+                <button>Nutrition</button>
+                <h1>A guide to clean bulking</h1>
+                <p>Want to gain weight or build muscle? The only solution is to eat surplus. Contrary to what most people think, it’s actually very har …</p>
+            </div>
+        </div>
+    </div>
+    <button style="margin-left: 550px; margin-top: 20px; background-color:red">Read More</button>
+
+    <!-- footer -->
+    <div id="footer">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png" alt="">
+            <p>The Fitmeals culinary team consists of very passionate and skilled chefs. Our team is well versed in nutrition and all our menus and plans are designed by qualified nutrition experts.</p>
+        </div>
+        <div>
+            <h1>Explore</h1>
+            <h5>Home</h5>
+            <h5>Meal plans</h5>
+        </div>
+        <div>
+            <h1>Links</h1>
+            <h5>About Us</h5>
+            <h5>Blogs</h5>
+            <h5>FAQ</h5>
+            <h5>Testimonials</h5>
+        </div>
+        <div class="contact">
+            <h1>Contacts</h1>
+            <h5>Call us:</h5>
+            <p>9100347480</p>
+            <p>9963697412</p>
+            <h5>Email us:</h5>
+            <p>fitmealsindia@gmail.com</p>
+            <h5>Our Location</h5>
+            <p>Banjara Hills, Road N0-5, Hyderabad</p>
+        </div>
+    </div>
+    <div id="copyright">
+        <p>Copyright © 2021. FitMeals. All Rights Reserved.</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        #navbar{
+            display: flex;
+            height: 80px;
+            width: 100%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #navbar>div{
+            margin: auto;
+        }
+        #navbar>div:nth-child(1){
+            width: 100px;
+            height: 60px;
+            margin-left: 50px;
+        }
+        div>img{
+            width: 100%;
+            height: 100%;     
+        }
+        div>img:hover{
+            cursor: pointer;
+        }
+        #navbar>div:nth-child(2){
+            display: flex;
+            gap: 25px;
+        }
+        div>h3:hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        #navbar>div:nth-child(3){
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            width: 200px;
+            text-align: center;
+            height: 60px;
+        }
+        #navbar>div:nth-child(3):hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        select{
+            font-size: 18px;
+            border: none;
+            font-weight: 550;
+        }
+        select:hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt="">
+        </div>
+        <div>
+            <h3>Home</h3>
+            <h3>Meal Plans</h3>
+            <h3>Health Coaching</h3>
+            <select name="" id="">
+                <option value="">Products</option>
+                <option value="">Vegan Sweets</option>
+                <option value="">Low-cal Sauces</option>
+                <option value="">Nut Butters</option>
+                <option value="">Fresh Bakes</option>
+            </select>
+            <h3>Blog</h3>
+            <h3>About Us</h3>
+        </div>
+        <div>
+            <h2>Call:9100347480</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

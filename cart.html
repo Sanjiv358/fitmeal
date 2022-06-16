@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <style>
+
+#navbar{
+            display: flex;
+            height: 80px;
+            width: 100%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #navbar>div{
+            margin: auto;
+        }
+        #navbar>div:nth-child(1){
+            width: 100px;
+            height: 60px;
+            margin-left: 50px;
+        }
+        div>img{
+            width: 100%;
+            height: 100%;     
+        }
+        div>img:hover{
+            cursor: pointer;
+        }
+        #navbar>div:nth-child(2){
+            display: flex;
+            gap: 25px;
+        }
+        div>h3:hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        #navbar>div:nth-child(3){
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            width: 200px;
+            text-align: center;
+            height: 60px;
+        }
+        #navbar>div:nth-child(3):hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+        select{
+            font-size: 18px;
+            border: none;
+            font-weight: 550;
+        }
+        select:hover{
+            cursor: pointer;
+            background-color: rgb(59, 148, 59);
+            color: white;
+        }
+
+
+
+    #cart{
+      width: 100%;
+      height: 300px;
+      background-color: rgba(0, 0, 0, 0.54);
+      color: white;
+    }
+    #cart>h1{
+      text-align: center;
+      padding-top: 100px;
+      font-size: 70px;
+    }
+    table{
+      margin: auto;
+      width: 60%;
+      margin-top: 40px;
+    }
+    thead>tr{
+      background-color:black;
+    }
+    tr>th{
+    /* background-color: black; */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* border-radius: 10px; */
+    }
+    tr>td{
+    /* color: white; */
+    /* background-color: teal; */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    }
+    #image{
+      /* margin: auto; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+
+      width:80px;
+      height: 80px;
+    }
+    #total{
+      text-align: center;
+      font-size: 30px;
+      color: red;
+    }
+    h3+button{
+      display: block;
+      margin: auto;
+      width: 200px;
+      height: 50px;
+      font-size: 25px;
+      background-color: red;
+    }
+    button:hover{
+      cursor: pointer;
+      background-color: green;
+      color: white;
+    }
+    td+button{
+      display: block;
+      margin: auto;
+      margin-top: 0px;
+      width: 100px;
+      height: 40px;
+      font-size: 20px;
+      background-color: aqua;
+    }
+
+
+    #footer{
+            display: flex;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.749);
+        }
+        #footer>div{
+            width: 22%;
+            height: 400px;
+            gap: 20px;
+            margin: auto;
+            padding: 10px;
+        }
+        #footer>div>img{
+            padding-left: 30px;
+        }
+        #footer>div>p{
+            color: white;
+            padding-top: 40px;
+            padding-left: 10px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        #footer>div>h1{
+            color: rgb(68, 208, 68);
+            padding: 0px 20px;
+        }
+        #footer>div>h5{
+            color: rgba(19, 186, 224, 0.908);
+            font-size: 20px;
+            padding: 0px 20px;
+        }
+        #footer>div>h5:hover{
+            cursor: pointer;
+            background-color: rgb(25, 174, 223);
+            color: white;
+        }
+        .contact>p{
+            margin-top: -55px;
+            margin-left: 10px;
+        }
+        #copyright{
+            height: 40px;
+            background-color: rgb(0, 0, 0);  
+            color: white;
+            padding: 20px;
+        }
+        #footer{
+          margin-top: 50px;
+        }
+ 
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <div>
+        <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt="">
+    </div>
+    <div>
+        <h3>Home</h3>
+        <h3>Meal Plans</h3>
+        <h3>Health Coaching</h3>
+        <h3>Products</h3>
+        <h3>Blog</h3>
+        <h3>About Us</h3>
+    </div>
+    <div>
+        <h2>Call:9100347480</h2>
+    </div>
+</div>
+
+  <div id="cart">
+    <h1>Cart</h1>
+  </div>
+  <table>
+    <!-- Dont change order of columns -->
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Remove Item</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Append your output here -->
+    </tbody>
+  </table>
+  <h3 id="total"></h3>
+  <button>Checkout</button>
+
+  <div id="footer">
+    <div>
+        <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png" alt="">
+        <p>The Fitmeals culinary team consists of very passionate and skilled chefs. Our team is well versed in nutrition and all our menus and plans are designed by qualified nutrition experts.</p>
+    </div>
+    <div>
+        <h1>Explore</h1>
+        <h5>Home</h5>
+        <h5>Meal plans</h5>
+    </div>
+    <div>
+        <h1>Links</h1>
+        <h5>About Us</h5>
+        <h5>Blogs</h5>
+        <h5>FAQ</h5>
+        <h5>Testimonials</h5>
+    </div>
+    <div class="contact">
+        <h1>Contacts</h1>
+        <h5>Call us:</h5>
+        <p>9100347480</p>
+        <p>9963697412</p>
+        <h5>Email us:</h5>
+        <p>fitmealsindia@gmail.com</p>
+        <h5>Our Location</h5>
+        <p>Banjara Hills, Road N0-5, Hyderabad</p>
+    </div>
+</div>
+<div id="copyright">
+    <p>Copyright © 2021. FitMeals. All Rights Reserved.</p>
+</div>
+  
+  
+</body>
+</html>
+
+<script src="cart.js"></script>
