@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Signup</title>
     <style>
+        *{
+            /* margin: 0px;
+            padding: 0px; */
+            box-sizing: border-box;
+        }
         #login{
             width: 100%;
             height: 300px;
@@ -46,70 +51,80 @@
 </head>
 <body>
     <div id="login">
-        <h1>My Account</h1>
+        <h1>Create Account</h1>
     </div>
-    <h1 style="text-align: center;">Login</h1>
+    <h1 style="text-align: center;">Sign Up</h1>
     <form action="">
-        <label for="">User Id</label>
+        <label for="">Name</label>
         <br>
-        <input id="email" type="text">
+        <input id="name" type="text">
         <br>
-        <label for="">Password</label>
+        <label for="">Enter Email</label>
+        <br>
+        <input id="email" type="email">
+        <br>
+        <label for="">Create Password</label>
         <br>
         <input id="password" type="password">
         <br>
-        <input type="submit" value="Sign in">
+        <input type="submit">
         <div id="signup">
-            <h4>I am a new user</h4>
-            <h3><a href="signup.html">Sign Up</a></h3>
+            <h4>I have a already account</h4>
+            <h3><a href="login.html">Login</a></h3>
         </div>
     </form>
-   
+
     
 </body>
 </html>
 
 <script>
-    // document.querySelector("form").addEventListener("submit",loginFun)
+    // let form=document.querySelector("form").addEventListener("submit",signup)
 
-    // function loginFun(){
+    // function signup(){
     //     event.preventDefault();
-    //     alert("Your Userid and Password is matched");
-    //     window.location.href="products.html";
+    //     let data={
+    //         // Name:form.name.value,
+    //         Email:form.email.value,
+    //         Password:form.password.value,
+    //     }
+    //     console.log(data)
+        
+    //     alert("Sign up successfully");
+    //     window.location.href="login.html";
     // }
 
-    let form=document.querySelector("form");
+    let form=document.querySelector("form")
     let userData=JSON.parse(localStorage.getItem("userData")) || [];
-
-    form.addEventListener("submit", function(){
+    form.addEventListener("submit",function(event){
         event.preventDefault();
         let data={
+            Name:form.name.value,
             Email:form.email.value,
             Password:form.password.value,
         }
-        console.log(data)
-        if(checkLogin(data.Email,data.Password)===true){
-            localStorage.setItem("login",JSON.stringify(data));
-            alert("Sign in Successfull")
-            window.location.href="products.html"
+        console.log(data);
+        if(checkMails(data.Email)===true){
+            userData.push(data);
+            localStorage.setItem("userData",JSON.stringify(userData));
+            alert("sign up successfully");
+            window.location.href="login.html"
         }
         else{
-            alert("Wrong Credentials")
+            alert("Account already exists")
+            window.location.href="login.html";
         }
     })
 
-    function checkLogin(Email,Password){
-        let filter=userData.filter(function(element){
-            return element.Email===Email && element.Password===Password;
+    function checkMails(Email){
+        let filtered=userData.filter(function(element){
+            return Email===element.Email;
         })
-        if(filter.length>0){
-            return true;
-        }
-        else{
+        if(filtered.length>0){
             return false;
         }
-
+        else{
+            return true;
+        }
     }
-
-
 </script>
